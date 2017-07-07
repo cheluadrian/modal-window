@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Modal window</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="https://use.fontawesome.com/1370830228.js"></script>
+</head>
+<body>
+<button id="open-modal">
+  <span>Open Modal</span>
+</button>
+<div class="container">
+  <div id="modal-window">
+    <div class="modal-header">
+      <div class="modal-title">Add Product</div>
+      <div class="modal-subtitle">Second-hand Car - <b>Automobiles</b></div>
+    </div>
+    <form action="#">
+      <div class="form-content">
+        <div class="form-section1">
+          <p class="sections-title">Form Section 1</p>
+          <div class="sec1-inputs">
+            <div class="announcement">
+              <span class="warning"></span>
+              <input class="standard-input" type="text" name="announcement_title" placeholder="Title of announcement">
+            </div>
+            <div class="carBrand">
+              <span class="warning"></span>
+              <select class="standard-input brandSelect" name="car_brand">
+                <option value="" disabled selected>Select car brand</option>
+                <option value="bmw" >BMW</option>
+                <option value="opel">Opel</option>
+                <option value="skoda">Skoda</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="hyundai">Hyundai</option>
+                <option value="dacia">Dacia</option>
+              </select>
+              <div id="car-brand-image"></div>
+            </div>
+            <div class="carYear">
+              <span class="warning"></span>
+              <select class="standard-input" id="manufacturingYear" name="car_year">
+                <option value="" disabled selected>Manufacturing Year</option>
+              </select>
+            </div>
+            <div class="carMileage">
+              <span class="warning"></span>
+              <input class="standard-input" type="text" name="mileage_number" placeholder="Mileage">
+              <select class="mileage" name="mileage_type">
+                <option value="km" selected>Km</option>
+                <option value="miles">Miles</option>
+              </select>
+            </div>
+            <div class="carFuel">
+              <span class="warning"></span>
+              <select class="standard-input" name="fuel_type">
+                <option value="" disabled selected>Select fuel type</option>
+                <option value="diesel" >Diesel</option>
+                <option value="gas">Gas</option>
+                <option value="lpg">LPG Autogas</option>
+                <option value="bio">Biofuels</option>
+              </select>
+            </div>
+            <div class="carColor">
+              <span class="warning"></span>
+              <input class="standard-input" type="text" name="car_color" placeholder="Car color">
+              <div id="car-color"></div>
+            </div>
+          </div>
+        </div>
+        <div class="form-section2">
+          <p class="sections-title">Form Section 2</p>
+          <div class="sec2-inputs">
+            <div class="damaged-vehicle">
+              <span class="warning"></span>
+              <span>Vehicle damaged : </span>
+              <input type="radio" name="damaged" value="Yes" >Yes
+              <input type="radio" name="damaged" value="No" >No
+              <textarea id="damagedVehicle" rows="4" cols="30" placeholder="Enter damages details"></textarea>
+            </div>
+            <div class="car-price">
+              <span class="warning"></span>
+              <input class="standard-input" type="text" name="car_price" placeholder="Price">
+              <select class="curency" name="curency_type">
+                <option value="dollar">$</option>
+                <option value="euro" selected>&euro;</option>
+                <option value="ron">RON</option>
+              </select>
+            </div>
+            <textarea class="description" rows="4" cols="30" placeholder="Enter additional description of the car (*optional)"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="form-submit">
+        <button id="cancel">Cancel</button>
+        <input id="submit" type="submit" value="Save">
+      </div>
+    </form>
+    <span class="vertical-bar"></span>
+    <i class="fa fa-times-circle" id="close-modal" aria-hidden="true"></i>
+  </div>
+</div>
+<script src="scripts.js"></script>
+</body>
+</html>

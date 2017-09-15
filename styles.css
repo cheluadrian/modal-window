@@ -2,7 +2,6 @@ body, html {
   margin: 0px;
   padding: 0px;
   font-family: sans-serif;
-  background-color: #d0d0d0;
 }
 
 body {
@@ -86,7 +85,7 @@ body {
   font-size: 17px;
   font-weight: 600;
   color: #696969;
-  background-color: #dfdfdf;
+  background-color: #c5eef5;
 }
 .modal-subtitle {
   border-bottom: 1px solid #8c8c8c;
